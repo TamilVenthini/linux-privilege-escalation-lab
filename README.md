@@ -1,5 +1,10 @@
 # Linux Privilege Escalation – Sudo Misconfiguration Lab
 
+## Full Report
+
+[Download Full Lab Report](linux-privilege-escalation.pdf)
+
+
 ## Platform
 TryHackMe Profile: https://tryhackme.com/p/tamilventhininatarajan 
 Room: https://tryhackme.com/room/linuxprivesc
