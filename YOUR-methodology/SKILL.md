@@ -5,6 +5,23 @@ description: Structured Linux privilege escalation workflow for lab environments
 
 # Linux Privilege Escalation Structured Workflow
 
+## Environment Validation
+
+Before starting Phase 1:
+
+1. Confirm target system is Linux.
+   - Verify using: uname or checking /etc/os-release
+
+2. Confirm shell access is available.
+   - Privilege escalation requires local shell access.
+
+3. Confirm this is a lab or authorized environment.
+
+If any of these conditions are not met:
+Stop execution and notify user that this workflow does not apply.
+
+---
+
 ## Scope Limitation
 
 This skill applies only to Linux systems.
