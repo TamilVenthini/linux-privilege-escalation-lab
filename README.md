@@ -1,3 +1,23 @@
+# Linux Privilege Escalation Lab – Structured Methodology Framework
+
+This repository is not just a single sudo misconfiguration lab.
+
+It also includes a structured Linux privilege escalation framework designed to enforce:
+
+- Environment validation before execution
+- Sequential enumeration phases
+- Validation gates between phases
+- Defined stop conditions
+- Structured reporting format
+- Decision-based workflow logic
+
+The goal of this project is to move from random command execution to systematic security methodology design.
+
+See `YOUR-methodology/` for the complete workflow framework.
+
+---
+
+
 # Linux Privilege Escalation – Sudo Misconfiguration Lab
 
 ## Full Report
