@@ -116,20 +116,35 @@ Confirm exploit compatibility before attempting.
 
 ## Stop Conditions
 
-Stop if:
-- Root shell obtained
-OR
-- All phases completed without viable escalation vector
+
+If root access is obtained:
+
+1. Immediately stop further enumeration.
+2. Do NOT suggest persistence, lateral movement, or data exfiltration.
+3. Generate structured escalation summary.
+4. Ask whether to proceed to post-exploitation phase separately.
+
+If all phases complete without viable escalation vector:
+
+1. Generate structured failure summary.
+2. List all attempted vectors.
+3. Conclude no escalation path identified.
 
 ---
 
 ## Output Format
 
-Final summary must include:
+Final output must include:
 
 - System Information
-- Current User
+- Current User Privileges
 - Key Findings Per Phase
-- Identified Escalation Vectors
-- Risk Assessment
+- Confirmed Escalation Vector (if any)
+- Escalation Method Used
+- Risk Classification
 - Conclusion
+
+If root was obtained, clearly state:
+"Privilege escalation successful. Root access confirmed."
+
+No additional exploitation steps unless explicitly requested.
